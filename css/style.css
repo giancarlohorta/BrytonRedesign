@@ -26,4 +26,18 @@ img {
   max-width: 100%;
 }
 
-/*  */
+/* grid */
+.struture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main main";
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
