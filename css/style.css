@@ -8,10 +8,15 @@ nav {
   padding: 0px;
   margin: 0px;
 }
-
+html {
+  background-color: #1f1f1f;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  background: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 li {
@@ -33,9 +38,6 @@ img {
   grid-template-areas:
     "header header"
     "main main";
-  background: url("../image/background.png");
-  background-repeat: no-repeat;
-  background-size: 100vw auto;
 }
 
 .header {
