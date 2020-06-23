@@ -30,7 +30,13 @@ a {
 img {
   max-width: 100%;
 }
-
+@media (max-width: 1024px) {
+  body {
+    background: url("../image/background-1024.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+}
 /* grid */
 .struture {
   display: grid;
@@ -47,6 +53,15 @@ img {
   align-items: center;
   padding: 30px;
 }
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header nav {
+    margin-top: 20px;
+  }
+}
 .logo {
   max-width: 197px;
 }
@@ -61,6 +76,7 @@ img {
   font-size: 1em;
   font-weight: bold;
 }
+
 .header li + li {
   margin-left: 10px;
 }
@@ -68,6 +84,16 @@ img {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .image-main,
+  .text-main {
+    margin: 30px auto !important;
+  }
 }
 .image-main {
   margin: 30% auto;
